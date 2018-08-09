@@ -1,0 +1,13 @@
+class CreateEnterprises < ActiveRecord::Migration[5.2]
+  def change
+    create_table :enterprises do |t|
+      t.string :name
+      t.string :category
+      t.string :country
+      t.text :description
+      t.string :imagePath
+
+      t.timestamps
+    end
+  end
+end
